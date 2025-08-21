@@ -44,7 +44,7 @@
 		</div>
 
 		<div class="footer-bottom">
-			<p>&copy; 2025 Sống Xanh. Tất cả quyền được bảo lưu.</p>
+			<p>&copy; 2025 Sống Xanh. Made by TrungLe.</p>
 			<div class="social-links">
 				<a href="#" aria-label="Facebook">
 					<svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -71,6 +71,12 @@
 		background: #1a202c;
 		color: #e2e8f0;
 		margin-top: auto;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
 	}
 
 	.footer-content {
@@ -115,14 +121,19 @@
 		margin-bottom: 1rem;
 	}
 
+	/* ==== Newsletter: luôn trên 1 hàng ==== */
 	.newsletter-form {
 		display: flex;
+		flex-direction: row;  /* luôn là hàng ngang */
+		align-items: center;
+		flex-wrap: nowrap;    /* không cho xuống dòng */
 		gap: 8px;
 		margin-top: 1rem;
 	}
 
 	.newsletter-form input {
-		flex: 1;
+		flex: 1;              /* chiếm phần còn lại */
+		min-width: 0;         /* cho phép co lại khi hẹp */
 		padding: 0.75rem;
 		border: 1px solid #4a5568;
 		border-radius: 8px;
@@ -133,12 +144,14 @@
 	.newsletter-form button {
 		padding: 0.75rem 1.5rem;
 		background: #228B22;
-		color: white;
+		color: #fff;
 		border: none;
 		border-radius: 8px;
 		font-weight: 500;
 		cursor: pointer;
 		transition: background 0.3s ease;
+		white-space: nowrap;  /* giữ "Đăng Ký" không xuống dòng */
+		flex: 0 0 auto;       /* không co lại */
 	}
 
 	.newsletter-form button:hover {
@@ -151,6 +164,8 @@
 		align-items: center;
 		padding: 2rem 0;
 		border-top: 1px solid #4a5568;
+		gap: 1rem;
+		flex-wrap: wrap;
 	}
 
 	.social-links {
@@ -175,11 +190,7 @@
 
 		.footer-bottom {
 			flex-direction: column;
-			gap: 1rem;
-		}
-
-		.newsletter-form {
-			flex-direction: column;
+			align-items: flex-start;
 		}
 	}
 </style>
