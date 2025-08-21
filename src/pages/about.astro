@@ -1,0 +1,243 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+	<Header />
+	<main class="about-page">
+		<section class="about-hero">
+			<div class="container">
+				<h1>Về Chúng Tôi</h1>
+				<p class="lead">Sứ mệnh của chúng tôi là truyền cảm hứng và hướng dẫn mọi người bắt đầu lối sống xanh, bền vững cho một tương lai tươi sáng hơn.</p>
+			</div>
+		</section>
+
+		<section class="about-content">
+			<div class="container">
+				<div class="content-grid">
+					<div class="content-text">
+						<h2>Tại Sao Sống Xanh?</h2>
+						<p>Trong bối cảnh biến đổi khí hậu ngày càng nghiêm trọng, việc thay đổi lối sống hướng tới sự bền vững không chỉ là trách nhiệm mà còn là cơ hội để tạo ra những tác động tích cực cho hành tinh của chúng ta.</p>
+						
+						<p>Blog "Sống Xanh" ra đời với mong muốn chia sẻ những kiến thức thực tế, dễ áp dụng về lối sống thân thiện môi trường. Chúng tôi tin rằng những thay đổi nhỏ trong cuộc sống hàng ngày có thể tạo nên những tác động lớn.</p>
+
+						<h3>Giá Trị Cốt Lõi</h3>
+						<ul class="values-list">
+							<li><strong>Thực Tế:</strong> Chia sẻ những mẹo hay có thể áp dụng ngay</li>
+							<li><strong>Dễ Tiếp Cận:</strong> Hướng dẫn đơn giản, phù hợp với mọi người</li>
+							<li><strong>Hiệu Quả:</strong> Tập trung vào những thay đổi có tác động thực sự</li>
+							<li><strong>Cộng Đồng:</strong> Xây dựng một cộng đồng quan tâm đến môi trường</li>
+						</ul>
+					</div>
+					<div class="content-image">
+						<img src="https://images.pexels.com/photos/1840309/pexels-photo-1840309.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sustainable living community" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="team-section">
+			<div class="container">
+				<h2>Đội Ngũ</h2>
+				<div class="team-grid">
+					<div class="team-member">
+						<div class="member-avatar">
+							<img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Nguyễn Văn An" />
+						</div>
+						<h3>Nguyễn Văn An</h3>
+						<p class="role">Nhà Nghiên Cứu Môi Trường</p>
+						<p>10 năm kinh nghiệm trong lĩnh vực phát triển bền vững và giáo dục môi trường.</p>
+					</div>
+
+					<div class="team-member">
+						<div class="member-avatar">
+							<img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Trần Thị Bình" />
+						</div>
+						<h3>Trần Thị Bình</h3>
+						<p class="role">Chuyên Gia Dinh Dưỡng</p>
+						<p>Chuyên về thực phẩm hữu cơ và chế độ ăn thân thiện môi trường.</p>
+					</div>
+
+					<div class="team-member">
+						<div class="member-avatar">
+							<img src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Lê Hoàng Cường" />
+						</div>
+						<h3>Lê Hoàng Cường</h3>
+						<p class="role">Kỹ Sư Năng Lượng</p>
+						<p>Chuyên gia về tiết kiệm năng lượng và công nghệ xanh trong gia đình.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.about-page {
+		min-height: calc(100vh - 200px);
+	}
+
+	.about-hero {
+		background: linear-gradient(135deg, #228B22, #32CD32);
+		color: white;
+		padding: 6rem 0 4rem;
+		text-align: center;
+	}
+
+	.about-hero h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.lead {
+		font-size: 1.25rem;
+		max-width: 600px;
+		margin: 0 auto;
+		opacity: 0.9;
+		line-height: 1.6;
+	}
+
+	.about-content {
+		padding: 5rem 0;
+	}
+
+	.content-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+
+	.content-text h2 {
+		font-size: 2.5rem;
+		color: #1a202c;
+		margin-bottom: 1.5rem;
+	}
+
+	.content-text h3 {
+		font-size: 1.5rem;
+		color: #228B22;
+		margin: 2rem 0 1rem;
+	}
+
+	.content-text p {
+		font-size: 1.1rem;
+		line-height: 1.7;
+		color: #4a5568;
+		margin-bottom: 1.5rem;
+	}
+
+	.values-list {
+		list-style: none;
+		padding: 0;
+	}
+
+	.values-list li {
+		padding: 0.75rem 0;
+		border-bottom: 1px solid #e2e8f0;
+		font-size: 1.1rem;
+		color: #4a5568;
+	}
+
+	.values-list li:last-child {
+		border-bottom: none;
+	}
+
+	.content-image img {
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+		border-radius: 16px;
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+	}
+
+	.team-section {
+		background: #f8fafc;
+		padding: 5rem 0;
+	}
+
+	.team-section h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		color: #1a202c;
+		margin-bottom: 3rem;
+	}
+
+	.team-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.team-member {
+		background: white;
+		padding: 2rem;
+		border-radius: 16px;
+		text-align: center;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	}
+
+	.member-avatar {
+		width: 120px;
+		height: 120px;
+		margin: 0 auto 1.5rem;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	.member-avatar img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.team-member h3 {
+		font-size: 1.25rem;
+		color: #1a202c;
+		margin-bottom: 0.5rem;
+	}
+
+	.role {
+		color: #228B22;
+		font-weight: 600;
+		margin-bottom: 1rem;
+	}
+
+	.team-member p:last-child {
+		color: #6b7280;
+		line-height: 1.6;
+	}
+
+	@media (max-width: 968px) {
+		.content-grid {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.about-hero h1 {
+			font-size: 2.5rem;
+		}
+
+		.content-text h2 {
+			font-size: 2rem;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.about-hero {
+			padding: 4rem 0 3rem;
+		}
+
+		.about-content, .team-section {
+			padding: 3rem 0;
+		}
+
+		.team-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

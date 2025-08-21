@@ -1,0 +1,99 @@
+<header class="header">
+	<nav class="nav">
+		<div class="container nav-container">
+			<div class="logo">
+				<a href="/">
+					<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="#228B22"/>
+						<path d="M5 16L5.5 18.5L8 19L5.5 19.5L5 22L4.5 19.5L2 19L4.5 18.5L5 16Z" fill="#9CAF88"/>
+						<path d="M19 16L19.5 18.5L22 19L19.5 19.5L19 22L18.5 19.5L16 19L18.5 18.5L19 16Z" fill="#9CAF88"/>
+					</svg>
+					<span>Sống Xanh</span>
+				</a>
+			</div>
+			
+			<ul class="nav-menu">
+				<li><a href="/">Trang Chủ</a></li>
+				<li><a href="/tips">Mẹo Hay</a></li>
+				<li><a href="/categories">Chủ Đề</a></li>
+				<li><a href="/about">Giới Thiệu</a></li>
+			</ul>
+
+			<div class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<style>
+	.header {
+		background: rgba(255, 255, 255, 0.95);
+		backdrop-filter: blur(10px);
+		border-bottom: 1px solid #e2e8f0;
+		position: sticky;
+		top: 0;
+		z-index: 100;
+		transition: all 0.3s ease;
+	}
+
+	.nav-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 24px;
+	}
+
+	.logo a {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-weight: 700;
+		font-size: 1.25rem;
+		color: #228B22;
+	}
+
+	.nav-menu {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		gap: 2rem;
+	}
+
+	.nav-menu a {
+		font-weight: 500;
+		color: #4a5568;
+		transition: color 0.3s ease;
+	}
+
+	.nav-menu a:hover {
+		color: #228B22;
+	}
+
+	.nav-toggle {
+		display: none;
+		flex-direction: column;
+		cursor: pointer;
+		gap: 4px;
+	}
+
+	.nav-toggle span {
+		width: 25px;
+		height: 3px;
+		background: #228B22;
+		transition: 0.3s;
+	}
+
+	@media (max-width: 768px) {
+		.nav-menu {
+			display: none;
+		}
+
+		.nav-toggle {
+			display: flex;
+		}
+	}
+</style>

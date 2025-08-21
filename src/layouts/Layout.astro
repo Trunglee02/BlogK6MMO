@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<title>Sống Xanh - Blog Chia Sẻ Mẹo Sống Bền Vững</title>
+		<meta name="description" content="Khám phá những mẹo hay về lối sống xanh, bền vững cho môi trường và sức khỏe của bạn." />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		min-height: 100vh;
+		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		line-height: 1.6;
+		color: #2d3748;
+		background-color: #f7fafc;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		line-height: 1.2;
+		font-weight: 600;
+		margin: 0 0 1rem 0;
+	}
+
+	p {
+		margin: 0 0 1rem 0;
+	}
+
+	a {
+		color: #228B22;
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	a:hover {
+		color: #1a6b1a;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 24px;
+	}
+
+	@media (max-width: 768px) {
+		.container {
+			padding: 0 16px;
+		}
+	}
+</style>

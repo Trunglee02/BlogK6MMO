@@ -1,0 +1,574 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+	<Header />
+	<main class="tips-page">
+		<section class="tips-hero">
+			<div class="container">
+				<h1>Mẹo Sống Xanh</h1>
+				<p class="lead">Khám phá những mẹo hay thực tế để bắt đầu lối sống bền vững ngay hôm nay</p>
+				
+				<div class="search-bar">
+					<input type="text" placeholder="Tìm kiếm mẹo hay..." id="searchInput">
+					<button type="button" id="searchBtn">
+						<svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="tips-content">
+			<div class="container">
+				<div class="filter-tabs">
+					<button class="filter-btn active" data-category="all">Tất Cả</button>
+					<button class="filter-btn" data-category="energy">Năng Lượng</button>
+					<button class="filter-btn" data-category="waste">Rác Thải</button>
+					<button class="filter-btn" data-category="food">Thực Phẩm</button>
+					<button class="filter-btn" data-category="transport">Di Chuyển</button>
+					<button class="filter-btn" data-category="home">Nhà Ở</button>
+				</div>
+
+				<div class="tips-grid" id="tipsGrid">
+					<!-- Mẹo Tiết Kiệm Năng Lượng -->
+					<article class="tip-card" data-category="energy">
+						<div class="tip-image">
+							<img src="https://images.pexels.com/photos/3394659/pexels-photo-3394659.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tiết kiệm điện" />
+							<div class="tip-category">Năng Lượng</div>
+						</div>
+						<div class="tip-content">
+							<h3>10 Cách Tiết Kiệm Điện Hiệu Quả</h3>
+							<p>Giảm 30-50% hóa đơn điện với những thay đổi đơn giản trong sinh hoạt hàng ngày.</p>
+							<ul class="tip-highlights">
+								<li>Sử dụng đèn LED thay thế đèn sợi đốt</li>
+								<li>Rút phích cắm thiết bị không sử dụng</li>
+								<li>Điều chỉnh nhiệt độ điều hòa hợp lý</li>
+							</ul>
+							<div class="tip-meta">
+								<span class="difficulty easy">Dễ</span>
+								<span class="impact high">Tác động cao</span>
+							</div>
+						</div>
+					</article>
+
+					<article class="tip-card" data-category="energy">
+						<div class="tip-image">
+							<img src="https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Năng lượng mặt trời" />
+							<div class="tip-category">Năng Lượng</div>
+						</div>
+						<div class="tip-content">
+							<h3>Tận Dụng Ánh Sáng Tự Nhiên</h3>
+							<p>Thiết kế không gian sống để tối đa hóa ánh sáng tự nhiên, giảm sử dụng đèn điện.</p>
+							<ul class="tip-highlights">
+								<li>Sử dụng gương để phản chiếu ánh sáng</li>
+								<li>Chọn màu sơn tường sáng</li>
+								<li>Cắt tỉa cây cối che khuất cửa sổ</li>
+							</ul>
+							<div class="tip-meta">
+								<span class="difficulty medium">Trung bình</span>
+								<span class="impact medium">Tác động vừa</span>
+							</div>
+						</div>
+					</article>
+
+					<!-- Mẹo Giảm Thiểu Rác Thải -->
+					<article class="tip-card" data-category="waste">
+						<div class="tip-image">
+							<img src="https://images.pexels.com/photos/3735218/pexels-photo-3735218.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Zero waste" />
+							<div class="tip-category">Rác Thải</div>
+						</div>
+						<div class="tip-content">
+							<h3>Bắt Đầu Zero Waste Tại Nhà</h3>
+							<p>Hướng dẫn từng bước để giảm thiểu rác thải gia đình xuống gần như bằng 0.</p>
+							<ul class="tip-highlights">
+								<li>Sử dụng túi vải thay túi nilon</li>
+								<li>Mua sắm tại cửa hàng không đóng gói</li>
+								<li>Tự làm sản phẩm làm sạch</li>
+							</ul>
+							<div class="tip-meta">
+								<span class="difficulty hard">Khó</span>
+								<span class="impact high">Tác động cao</span>
+							</div>
+						</div>
+					</article>
+
+					<article class="tip-card" data-category="waste">
+						<div class="tip-image">
+							<img src="https://images.pexels.com/photos/802221/pexels-photo-802221.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tái chế" />
+							<div class="tip-category">Rác Thải</div>
+						</div>
+						<div class="tip-content">
+							<h3>Tái Chế Thông Minh</h3>
+							<p>Biến rác thải thành tài nguyên hữu ích với những ý tưởng sáng tạo.</p>
+							<ul class="tip-highlights">
+								<li>Làm chậu trồng cây từ chai nhựa</li>
+								<li>Tái sử dụng hộp giấy làm kệ sách</li>
+								<li>Ủ phân compost từ rác thực phẩm</li>
+							</ul>
+							<div class="tip-meta">
+								<span class="difficulty medium">Trung bình</span>
+								<span class="impact high">Tác động cao</span>
+							</div>
+						</div>
+					</article>
+
+					<!-- Mẹo Ăn Uống Xanh -->
+					<article class="tip-card" data-category="food">
+						<div class="tip-image">
+							<img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Thực phẩm hữu cơ" />
+							<div class="tip-category">Thực Phẩm</div>
+						</div>
+						<div class="tip-content">
+							<h3>Chế Độ Ăn Plant-Based</h3>
+							<p>Giảm carbon footprint thông qua việc tăng cường thực phẩm thực vật trong bữa ăn.</p>
+							<ul class="tip-highlights">
+								<li>Thay thế protein động vật 2-3 bữa/tuần</li>
+								<li>Chọn thực phẩm địa phương theo mùa</li>
+								<li>Tự trồng rau thơm tại nhà</li>
+							</ul>
+							<div class="tip-meta">
+								<span class="difficulty easy">Dễ</span>
+								<span class="impact high">Tác động cao</span>
+							</div>
+						</div>
+					</article>
+
+					<article class="tip-card" data-category="food">
+						<div class="tip-image">
+							<img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Vườn rau" />
+							<div class="tip-category">Thực Phẩm</div>
+						</div>
+						<div class="tip-content">
+							<h3>Vườn Rau Mini Tại Ban Công</h3>
+							<p>Tự cung tự cấp rau sạch ngay tại nhà với không gian và chi phí tối thiểu.</p>
+							<ul class="tip-highlights">
+								<li>Chọn giống rau phù hợp với khí hậu</li>
+								<li>Sử dụng đất compost tự làm</li>
+								<li>Tưới nước bằng hệ thống nhỏ giọt</li>
+							</ul>
+							<div class="tip-meta">
+								<span class="difficulty medium">Trung bình</span>
+								<span class="impact medium">Tác động vừa</span>
+							</div>
+						</div>
+					</article>
+
+					<!-- Mẹo Di Chuyển Xanh -->
+					<article class="tip-card" data-category="transport">
+						<div class="tip-image">
+							<img src="https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Xe đạp" />
+							<div class="tip-category">Di Chuyển</div>
+						</div>
+						<div class="tip-content">
+							<h3>Đi Xe Đạp Thay Xe Máy</h3>
+							<p>Giảm khí thải và cải thiện sức khỏe với phương tiện giao thông xanh.</p>
+							<ul class="tip-highlights">
+								<li>Lập kế hoạch tuyến đường an toàn</li>
+								<li>Đầu tư thiết bị bảo hộ chất lượng</li>
+								<li>Kết hợp với phương tiện công cộng</li>
+							</ul>
+							<div class="tip-meta">
+								<span class="difficulty easy">Dễ</span>
+								<span class="impact medium">Tác động vừa</span>
+							</div>
+						</div>
+					</article>
+
+					<article class="tip-card" data-category="transport">
+						<div class="tip-image">
+							<img src="https://images.pexels.com/photos/1756957/pexels-photo-1756957.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Giao thông công cộng" />
+							<div class="tip-category">Di Chuyển</div>
+						</div>
+						<div class="tip-content">
+							<h3>Tối Ưu Hóa Giao Thông Công Cộng</h3>
+							<p>Sử dụng hiệu quả các phương tiện công cộng để giảm ô nhiễm không khí.</p>
+							<ul class="tip-highlights">
+								<li>Sử dụng ứng dụng định tuyến thông minh</li>
+								<li>Mua vé tháng để tiết kiệm chi phí</li>
+								<li>Kết hợp đi bộ với xe buýt/tàu điện</li>
+							</ul>
+							<div class="tip-meta">
+								<span class="difficulty easy">Dễ</span>
+								<span class="impact high">Tác động cao</span>
+							</div>
+						</div>
+					</article>
+
+					<!-- Mẹo Nhà Ở Xanh -->
+					<article class="tip-card" data-category="home">
+						<div class="tip-image">
+							<img src="https://images.pexels.com/photos/1005058/pexels-photo-1005058.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cây xanh trong nhà" />
+							<div class="tip-category">Nhà Ở</div>
+						</div>
+						<div class="tip-content">
+							<h3>Cây Xanh Lọc Không Khí</h3>
+							<p>Cải thiện chất lượng không khí trong nhà với những loại cây dễ chăm sóc.</p>
+							<ul class="tip-highlights">
+								<li>Trầu bà - lọc formaldehyde</li>
+								<li>Lưỡi hổ - sản xuất oxy ban đêm</li>
+								<li>Cây nhện - hấp thụ khí độc</li>
+							</ul>
+							<div class="tip-meta">
+								<span class="difficulty easy">Dễ</span>
+								<span class="impact medium">Tác động vừa</span>
+							</div>
+						</div>
+					</article>
+
+					<article class="tip-card" data-category="home">
+						<div class="tip-image">
+							<img src="https://images.pexels.com/photos/3760280/pexels-photo-3760280.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sản phẩm tự nhiên" />
+							<div class="tip-category">Nhà Ở</div>
+						</div>
+						<div class="tip-content">
+							<h3>Chất Tẩy Rửa Tự Nhiên</h3>
+							<p>Tự làm các sản phẩm làm sạch an toàn từ nguyên liệu thiên nhiên.</p>
+							<ul class="tip-highlights">
+								<li>Giấm + baking soda = tẩy rửa đa năng</li>
+								<li>Chanh + muối = tẩy vết bẩn</li>
+								<li>Tinh dầu = khử mùi tự nhiên</li>
+							</ul>
+							<div class="tip-meta">
+								<span class="difficulty easy">Dễ</span>
+								<span class="impact medium">Tác động vừa</span>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<div class="load-more">
+					<button class="btn btn-outline" id="loadMoreBtn">Xem Thêm Mẹo Hay</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.tips-page {
+		min-height: calc(100vh - 200px);
+	}
+
+	.tips-hero {
+		background: linear-gradient(135deg, #228B22, #32CD32);
+		color: white;
+		padding: 6rem 0 4rem;
+		text-align: center;
+	}
+
+	.tips-hero h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.lead {
+		font-size: 1.25rem;
+		max-width: 600px;
+		margin: 0 auto 2rem;
+		opacity: 0.9;
+		line-height: 1.6;
+	}
+
+	.search-bar {
+		max-width: 500px;
+		margin: 0 auto;
+		position: relative;
+		display: flex;
+		background: white;
+		border-radius: 50px;
+		overflow: hidden;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	}
+
+	.search-bar input {
+		flex: 1;
+		padding: 1rem 1.5rem;
+		border: none;
+		outline: none;
+		font-size: 1rem;
+		color: #333;
+	}
+
+	.search-bar button {
+		padding: 1rem 1.5rem;
+		background: #228B22;
+		border: none;
+		color: white;
+		cursor: pointer;
+		transition: background 0.3s ease;
+	}
+
+	.search-bar button:hover {
+		background: #1a6b1a;
+	}
+
+	.tips-content {
+		padding: 5rem 0;
+	}
+
+	.filter-tabs {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin-bottom: 3rem;
+		flex-wrap: wrap;
+	}
+
+	.filter-btn {
+		padding: 0.75rem 1.5rem;
+		border: 2px solid #e2e8f0;
+		background: white;
+		color: #6b7280;
+		border-radius: 25px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		font-weight: 500;
+	}
+
+	.filter-btn.active,
+	.filter-btn:hover {
+		background: #228B22;
+		color: white;
+		border-color: #228B22;
+	}
+
+	.tips-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+		gap: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	.tip-card {
+		background: white;
+		border-radius: 16px;
+		overflow: hidden;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+		transition: all 0.3s ease;
+		border: 1px solid #f1f5f9;
+	}
+
+	.tip-card:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+	}
+
+	.tip-image {
+		position: relative;
+		height: 200px;
+		overflow: hidden;
+	}
+
+	.tip-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.3s ease;
+	}
+
+	.tip-card:hover .tip-image img {
+		transform: scale(1.05);
+	}
+
+	.tip-category {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		background: #228B22;
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-size: 0.875rem;
+		font-weight: 500;
+	}
+
+	.tip-content {
+		padding: 1.5rem;
+	}
+
+	.tip-content h3 {
+		font-size: 1.25rem;
+		color: #1a202c;
+		margin-bottom: 0.75rem;
+		font-weight: 600;
+	}
+
+	.tip-content > p {
+		color: #6b7280;
+		line-height: 1.6;
+		margin-bottom: 1rem;
+	}
+
+	.tip-highlights {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 1.5rem;
+	}
+
+	.tip-highlights li {
+		padding: 0.5rem 0;
+		color: #4a5568;
+		position: relative;
+		padding-left: 1.5rem;
+	}
+
+	.tip-highlights li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: #228B22;
+		font-weight: bold;
+	}
+
+	.tip-meta {
+		display: flex;
+		gap: 0.75rem;
+		flex-wrap: wrap;
+	}
+
+	.tip-meta span {
+		padding: 0.25rem 0.75rem;
+		border-radius: 12px;
+		font-size: 0.875rem;
+		font-weight: 500;
+	}
+
+	.difficulty.easy {
+		background: #dcfce7;
+		color: #166534;
+	}
+
+	.difficulty.medium {
+		background: #fef3c7;
+		color: #92400e;
+	}
+
+	.difficulty.hard {
+		background: #fee2e2;
+		color: #991b1b;
+	}
+
+	.impact.high {
+		background: #dbeafe;
+		color: #1e40af;
+	}
+
+	.impact.medium {
+		background: #f3e8ff;
+		color: #7c3aed;
+	}
+
+	.load-more {
+		text-align: center;
+	}
+
+	.btn-outline {
+		background: transparent;
+		color: #228B22;
+		border: 2px solid #228B22;
+		padding: 1rem 2rem;
+		border-radius: 12px;
+		font-weight: 600;
+		text-decoration: none;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+
+	.btn-outline:hover {
+		background: #228B22;
+		color: white;
+		transform: translateY(-2px);
+	}
+
+	@media (max-width: 768px) {
+		.tips-hero h1 {
+			font-size: 2.5rem;
+		}
+
+		.tips-grid {
+			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+
+		.filter-tabs {
+			gap: 0.5rem;
+		}
+
+		.filter-btn {
+			padding: 0.5rem 1rem;
+			font-size: 0.875rem;
+		}
+
+		.tips-content {
+			padding: 3rem 0;
+		}
+
+		.search-bar {
+			margin: 0 1rem;
+		}
+	}
+</style>
+
+<script>
+	// Filter functionality
+	const filterBtns = document.querySelectorAll('.filter-btn');
+	const tipCards = document.querySelectorAll('.tip-card');
+
+	filterBtns.forEach(btn => {
+		btn.addEventListener('click', () => {
+			// Remove active class from all buttons
+			filterBtns.forEach(b => b.classList.remove('active'));
+			// Add active class to clicked button
+			btn.classList.add('active');
+
+			const category = btn.getAttribute('data-category');
+
+			tipCards.forEach(card => {
+				if (category === 'all' || card.getAttribute('data-category') === category) {
+					card.style.display = 'block';
+				} else {
+					card.style.display = 'none';
+				}
+			});
+		});
+	});
+
+	// Search functionality
+	const searchInput = document.getElementById('searchInput');
+	const searchBtn = document.getElementById('searchBtn');
+
+	function performSearch() {
+		const searchTerm = searchInput.value.toLowerCase();
+		
+		tipCards.forEach(card => {
+			const title = card.querySelector('h3').textContent.toLowerCase();
+			const content = card.querySelector('p').textContent.toLowerCase();
+			
+			if (title.includes(searchTerm) || content.includes(searchTerm)) {
+				card.style.display = 'block';
+			} else {
+				card.style.display = 'none';
+			}
+		});
+	}
+
+	searchBtn.addEventListener('click', performSearch);
+	searchInput.addEventListener('keypress', (e) => {
+		if (e.key === 'Enter') {
+			performSearch();
+		}
+	});
+
+	// Load more functionality (placeholder)
+	const loadMoreBtn = document.getElementById('loadMoreBtn');
+	loadMoreBtn.addEventListener('click', () => {
+		alert('Tính năng này sẽ được phát triển trong tương lai!');
+	});
+</script>

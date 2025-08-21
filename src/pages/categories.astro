@@ -1,0 +1,643 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+	<Header />
+	<main class="categories-page">
+		<section class="categories-hero">
+			<div class="container">
+				<h1>Chủ Đề Sống Xanh</h1>
+				<p class="lead">Khám phá các lĩnh vực khác nhau của lối sống bền vững và tìm hiểu cách áp dụng vào cuộc sống hàng ngày</p>
+			</div>
+		</section>
+
+		<section class="categories-content">
+			<div class="container">
+				<div class="categories-grid">
+					<!-- Tiết Kiệm Năng Lượng -->
+					<div class="category-detail-card">
+						<div class="category-header">
+							<div class="category-icon energy">
+								<svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+								</svg>
+							</div>
+							<div class="category-info">
+								<h2>Tiết Kiệm Năng Lượng</h2>
+								<p>Giảm tiêu thụ năng lượng, tiết kiệm chi phí và bảo vệ môi trường</p>
+							</div>
+						</div>
+						
+						<div class="category-stats">
+							<div class="stat">
+								<span class="stat-number">15</span>
+								<span class="stat-label">Mẹo hay</span>
+							</div>
+							<div class="stat">
+								<span class="stat-number">30-50%</span>
+								<span class="stat-label">Tiết kiệm điện</span>
+							</div>
+						</div>
+
+						<div class="category-topics">
+							<h4>Chủ đề chính:</h4>
+							<div class="topics-list">
+								<span class="topic-tag">Đèn LED</span>
+								<span class="topic-tag">Điều hòa không khí</span>
+								<span class="topic-tag">Thiết bị điện</span>
+								<span class="topic-tag">Cách nhiệt</span>
+								<span class="topic-tag">Năng lượng mặt trời</span>
+							</div>
+						</div>
+
+						<div class="category-preview">
+							<h4>Mẹo nổi bật:</h4>
+							<ul>
+								<li>Thay đổi toàn bộ đèn trong nhà sang LED</li>
+								<li>Rút phích cắm thiết bị khi không sử dụng</li>
+								<li>Sử dụng quạt trần kết hợp điều hòa</li>
+								<li>Cách nhiệt cửa sổ bằng rèm dày</li>
+							</ul>
+						</div>
+
+						<a href="/category/energy" class="category-cta">Khám Phá Ngay →</a>
+					</div>
+
+					<!-- Giảm Thiểu Rác Thải -->
+					<div class="category-detail-card">
+						<div class="category-header">
+							<div class="category-icon waste">
+								<svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+								</svg>
+							</div>
+							<div class="category-info">
+								<h2>Giảm Thiểu Rác Thải</h2>
+								<p>Thực hành Zero Waste và tái chế thông minh cho gia đình</p>
+							</div>
+						</div>
+						
+						<div class="category-stats">
+							<div class="stat">
+								<span class="stat-number">12</span>
+								<span class="stat-label">Mẹo hay</span>
+							</div>
+							<div class="stat">
+								<span class="stat-number">80%</span>
+								<span class="stat-label">Giảm rác thải</span>
+							</div>
+						</div>
+
+						<div class="category-topics">
+							<h4>Chủ đề chính:</h4>
+							<div class="topics-list">
+								<span class="topic-tag">Zero Waste</span>
+								<span class="topic-tag">Tái chế</span>
+								<span class="topic-tag">Compost</span>
+								<span class="topic-tag">Túi vải</span>
+								<span class="topic-tag">Giảm nhựa</span>
+							</div>
+						</div>
+
+						<div class="category-preview">
+							<h4>Mẹo nổi bật:</h4>
+							<ul>
+								<li>Sử dụng túi vải thay thế túi nilon</li>
+								<li>Mua sắm tại cửa hàng không đóng gói</li>
+								<li>Tự làm sản phẩm làm sạch</li>
+								<li>Ủ phân compost từ rác thực phẩm</li>
+							</ul>
+						</div>
+
+						<a href="/category/waste" class="category-cta">Khám Phá Ngay →</a>
+					</div>
+
+					<!-- Ăn Uống Xanh -->
+					<div class="category-detail-card">
+						<div class="category-header">
+							<div class="category-icon food">
+								<svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+								</svg>
+							</div>
+							<div class="category-info">
+								<h2>Ăn Uống Xanh</h2>
+								<p>Lựa chọn thực phẩm bền vững và chế độ ăn thân thiện môi trường</p>
+							</div>
+						</div>
+						
+						<div class="category-stats">
+							<div class="stat">
+								<span class="stat-number">18</span>
+								<span class="stat-label">Mẹo hay</span>
+							</div>
+							<div class="stat">
+								<span class="stat-number">40%</span>
+								<span class="stat-label">Giảm carbon</span>
+							</div>
+						</div>
+
+						<div class="category-topics">
+							<h4>Chủ đề chính:</h4>
+							<div class="topics-list">
+								<span class="topic-tag">Plant-based</span>
+								<span class="topic-tag">Thực phẩm hữu cơ</span>
+								<span class="topic-tag">Trồng rau</span>
+								<span class="topic-tag">Mua sắm địa phương</span>
+								<span class="topic-tag">Giảm lãng phí</span>
+							</div>
+						</div>
+
+						<div class="category-preview">
+							<h4>Mẹo nổi bật:</h4>
+							<ul>
+								<li>Tăng cường thực phẩm thực vật</li>
+								<li>Chọn thực phẩm địa phương theo mùa</li>
+								<li>Tự trồng rau thơm tại nhà</li>
+								<li>Lập kế hoạch bữa ăn để tránh lãng phí</li>
+							</ul>
+						</div>
+
+						<a href="/category/food" class="category-cta">Khám Phá Ngay →</a>
+					</div>
+
+					<!-- Di Chuyển Bền Vững -->
+					<div class="category-detail-card">
+						<div class="category-header">
+							<div class="category-icon transport">
+								<svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+								</svg>
+							</div>
+							<div class="category-info">
+								<h2>Di Chuyển Bền Vững</h2>
+								<p>Phương tiện giao thông xanh và cách thức di chuyển thân thiện môi trường</p>
+							</div>
+						</div>
+						
+						<div class="category-stats">
+							<div class="stat">
+								<span class="stat-number">10</span>
+								<span class="stat-label">Mẹo hay</span>
+							</div>
+							<div class="stat">
+								<span class="stat-number">60%</span>
+								<span class="stat-label">Giảm khí thải</span>
+							</div>
+						</div>
+
+						<div class="category-topics">
+							<h4>Chủ đề chính:</h4>
+							<div class="topics-list">
+								<span class="topic-tag">Xe đạp</span>
+								<span class="topic-tag">Giao thông công cộng</span>
+								<span class="topic-tag">Đi bộ</span>
+								<span class="topic-tag">Xe điện</span>
+								<span class="topic-tag">Chia sẻ xe</span>
+							</div>
+						</div>
+
+						<div class="category-preview">
+							<h4>Mẹo nổi bật:</h4>
+							<ul>
+								<li>Đi xe đạp thay xe máy cho quãng đường ngắn</li>
+								<li>Sử dụng giao thông công cộng hiệu quả</li>
+								<li>Kết hợp nhiều việc trong một chuyến đi</li>
+								<li>Làm việc từ xa để giảm di chuyển</li>
+							</ul>
+						</div>
+
+						<a href="/category/transport" class="category-cta">Khám Phá Ngay →</a>
+					</div>
+
+					<!-- Nhà Ở Xanh -->
+					<div class="category-detail-card">
+						<div class="category-header">
+							<div class="category-icon home">
+								<svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 15v-4a2 2 0 114 0v4"></path>
+								</svg>
+							</div>
+							<div class="category-info">
+								<h2>Nhà Ở Xanh</h2>
+								<p>Thiết kế và trang trí không gian sống thân thiện với môi trường</p>
+							</div>
+						</div>
+						
+						<div class="category-stats">
+							<div class="stat">
+								<span class="stat-number">14</span>
+								<span class="stat-label">Mẹo hay</span>
+							</div>
+							<div class="stat">
+								<span class="stat-number">25%</span>
+								<span class="stat-label">Cải thiện không khí</span>
+							</div>
+						</div>
+
+						<div class="category-topics">
+							<h4>Chủ đề chính:</h4>
+							<div class="topics-list">
+								<span class="topic-tag">Cây xanh</span>
+								<span class="topic-tag">Sản phẩm tự nhiên</span>
+								<span class="topic-tag">Vật liệu eco</span>
+								<span class="topic-tag">Tiết kiệm nước</span>
+								<span class="topic-tag">Ánh sáng tự nhiên</span>
+							</div>
+						</div>
+
+						<div class="category-preview">
+							<h4>Mẹo nổi bật:</h4>
+							<ul>
+								<li>Trồng cây lọc không khí trong nhà</li>
+								<li>Sử dụng chất tẩy rửa tự nhiên</li>
+								<li>Tận dụng ánh sáng tự nhiên tối đa</li>
+								<li>Thu gom nước mưa để tưới cây</li>
+							</ul>
+						</div>
+
+						<a href="/category/home" class="category-cta">Khám Phá Ngay →</a>
+					</div>
+
+					<!-- Chăm Sóc Cá Nhân -->
+					<div class="category-detail-card">
+						<div class="category-header">
+							<div class="category-icon beauty">
+								<svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+								</svg>
+							</div>
+							<div class="category-info">
+								<h2>Chăm Sóc Cá Nhân</h2>
+								<p>Sản phẩm làm đẹp tự nhiên và chăm sóc sức khỏe bền vững</p>
+							</div>
+						</div>
+						
+						<div class="category-stats">
+							<div class="stat">
+								<span class="stat-number">11</span>
+								<span class="stat-label">Mẹo hay</span>
+							</div>
+							<div class="stat">
+								<span class="stat-number">100%</span>
+								<span class="stat-label">Tự nhiên</span>
+							</div>
+						</div>
+
+						<div class="category-topics">
+							<h4>Chủ đề chính:</h4>
+							<div class="topics-list">
+								<span class="topic-tag">Mỹ phẩm DIY</span>
+								<span class="topic-tag">Nguyên liệu tự nhiên</span>
+								<span class="topic-tag">Zero waste beauty</span>
+								<span class="topic-tag">Sức khỏe</span>
+								<span class="topic-tag">Thảo dược</span>
+							</div>
+						</div>
+
+						<div class="category-preview">
+							<h4>Mẹo nổi bật:</h4>
+							<ul>
+								<li>Tự làm mặt nạ từ nguyên liệu thiên nhiên</li>
+								<li>Sử dụng dầu dừa đa năng</li>
+								<li>Kem đánh răng từ baking soda</li>
+								<li>Dầu gội khô từ bột ngô</li>
+							</ul>
+						</div>
+
+						<a href="/category/beauty" class="category-cta">Khám Phá Ngay →</a>
+					</div>
+				</div>
+
+				<div class="impact-section">
+					<div class="impact-card">
+						<h2>Tác Động Tích Cực</h2>
+						<p>Khi bạn áp dụng các mẹo sống xanh từ tất cả các chủ đề, bạn có thể tạo ra những thay đổi đáng kể:</p>
+						
+						<div class="impact-stats">
+							<div class="impact-stat">
+								<div class="impact-number">50%</div>
+								<div class="impact-label">Giảm carbon footprint</div>
+							</div>
+							<div class="impact-stat">
+								<div class="impact-number">30%</div>
+								<div class="impact-label">Tiết kiệm chi phí sinh hoạt</div>
+							</div>
+							<div class="impact-stat">
+								<div class="impact-number">80%</div>
+								<div class="impact-label">Giảm rác thải gia đình</div>
+							</div>
+							<div class="impact-stat">
+								<div class="impact-number">100%</div>
+								<div class="impact-label">Cải thiện chất lượng cuộc sống</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.categories-page {
+		min-height: calc(100vh - 200px);
+	}
+
+	.categories-hero {
+		background: linear-gradient(135deg, #228B22, #32CD32);
+		color: white;
+		padding: 6rem 0 4rem;
+		text-align: center;
+	}
+
+	.categories-hero h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.lead {
+		font-size: 1.25rem;
+		max-width: 700px;
+		margin: 0 auto;
+		opacity: 0.9;
+		line-height: 1.6;
+	}
+
+	.categories-content {
+		padding: 5rem 0;
+	}
+
+	.categories-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		gap: 2rem;
+		margin-bottom: 4rem;
+	}
+
+	.category-detail-card {
+		background: white;
+		border-radius: 20px;
+		padding: 2rem;
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+		border: 1px solid #f1f5f9;
+		transition: all 0.3s ease;
+	}
+
+	.category-detail-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+	}
+
+	.category-header {
+		display: flex;
+		align-items: flex-start;
+		gap: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.category-icon {
+		width: 80px;
+		height: 80px;
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		flex-shrink: 0;
+	}
+
+	.category-icon.energy {
+		background: linear-gradient(135deg, #f59e0b, #f97316);
+	}
+
+	.category-icon.waste {
+		background: linear-gradient(135deg, #ef4444, #dc2626);
+	}
+
+	.category-icon.food {
+		background: linear-gradient(135deg, #22c55e, #16a34a);
+	}
+
+	.category-icon.transport {
+		background: linear-gradient(135deg, #3b82f6, #2563eb);
+	}
+
+	.category-icon.home {
+		background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+	}
+
+	.category-icon.beauty {
+		background: linear-gradient(135deg, #ec4899, #db2777);
+	}
+
+	.category-info h2 {
+		font-size: 1.5rem;
+		color: #1a202c;
+		margin-bottom: 0.5rem;
+		font-weight: 600;
+	}
+
+	.category-info p {
+		color: #6b7280;
+		line-height: 1.5;
+	}
+
+	.category-stats {
+		display: flex;
+		gap: 2rem;
+		margin-bottom: 2rem;
+		padding: 1rem;
+		background: #f8fafc;
+		border-radius: 12px;
+	}
+
+	.stat {
+		text-align: center;
+	}
+
+	.stat-number {
+		display: block;
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: #228B22;
+	}
+
+	.stat-label {
+		font-size: 0.875rem;
+		color: #6b7280;
+	}
+
+	.category-topics {
+		margin-bottom: 2rem;
+	}
+
+	.category-topics h4 {
+		font-size: 1rem;
+		color: #374151;
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.topics-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.topic-tag {
+		background: #e5f3ff;
+		color: #1e40af;
+		padding: 0.25rem 0.75rem;
+		border-radius: 20px;
+		font-size: 0.875rem;
+		font-weight: 500;
+	}
+
+	.category-preview {
+		margin-bottom: 2rem;
+	}
+
+	.category-preview h4 {
+		font-size: 1rem;
+		color: #374151;
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.category-preview ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.category-preview li {
+		padding: 0.5rem 0;
+		color: #4a5568;
+		position: relative;
+		padding-left: 1.5rem;
+		line-height: 1.5;
+	}
+
+	.category-preview li::before {
+		content: "→";
+		position: absolute;
+		left: 0;
+		color: #228B22;
+		font-weight: bold;
+	}
+
+	.category-cta {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: #228B22;
+		color: white;
+		padding: 0.75rem 1.5rem;
+		border-radius: 12px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+	}
+
+	.category-cta:hover {
+		background: #1a6b1a;
+		transform: translateX(5px);
+	}
+
+	.impact-section {
+		margin-top: 4rem;
+	}
+
+	.impact-card {
+		background: linear-gradient(135deg, #f0f9ff, #ecfdf5);
+		border-radius: 20px;
+		padding: 3rem;
+		text-align: center;
+		border: 1px solid #e0f2fe;
+	}
+
+	.impact-card h2 {
+		font-size: 2rem;
+		color: #1a202c;
+		margin-bottom: 1rem;
+	}
+
+	.impact-card > p {
+		font-size: 1.1rem;
+		color: #4a5568;
+		margin-bottom: 2rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.impact-stats {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 2rem;
+	}
+
+	.impact-stat {
+		text-align: center;
+	}
+
+	.impact-number {
+		font-size: 3rem;
+		font-weight: 700;
+		color: #228B22;
+		display: block;
+		margin-bottom: 0.5rem;
+	}
+
+	.impact-label {
+		color: #6b7280;
+		font-weight: 500;
+	}
+
+	@media (max-width: 768px) {
+		.categories-hero h1 {
+			font-size: 2.5rem;
+		}
+
+		.categories-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.category-detail-card {
+			padding: 1.5rem;
+		}
+
+		.category-header {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.category-stats {
+			justify-content: center;
+		}
+
+		.categories-content {
+			padding: 3rem 0;
+		}
+
+		.impact-card {
+			padding: 2rem;
+		}
+
+		.impact-stats {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.5rem;
+		}
+
+		.impact-number {
+			font-size: 2rem;
+		}
+	}
+</style>
